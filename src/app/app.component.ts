@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'demo-timer';
+
+  isDisabledTimer = false;
+
+  toggleTimer() {
+    this.isDisabledTimer = !this.isDisabledTimer;
+  }
+
+  showWarning() {
+    window.alert("Timer đã hoàn thành");
+  }
 }
